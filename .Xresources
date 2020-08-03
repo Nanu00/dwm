@@ -1,0 +1,306 @@
+! URxvt*termName:                       string
+URxvt*geometry:                       80x24
+! URxvt*chdir:                          string
+! URxvt*reverseVideo:                   boolean
+! URxvt*loginShell:                     boolean
+! URxvt*multiClickTime:                 number
+! URxvt*jumpScroll:                     boolean
+! URxvt*skipScroll:                     boolean
+! URxvt*pastableTabs:                   boolean
+! URxvt*scrollstyle:                    mode
+URxvt*scrollBar:                      off
+! URxvt*scrollBar_right:                boolean
+! URxvt*scrollBar_floating:             boolean
+! URxvt*scrollBar_align:                mode
+! URxvt*thickness:                      number
+! URxvt*scrollTtyOutput:                boolean
+! URxvt*scrollTtyKeypress:              boolean
+! URxvt*scrollWithBuffer:               boolean
+! URxvt*inheritPixmap:                  boolean
+URxvt*transparent:                    off
+! URxvt*tintColor:                      color
+! URxvt*shading:                        0
+! URxvt*blurRadius:                     0
+! URxvt*fading:                         number
+! URxvt*fadeColor:                      color
+! URxvt*utmpInhibit:                    boolean
+! URxvt*urgentOnBell:                   boolean
+! URxvt*visualBell:                     boolean
+! URxvt*mapAlert:                       boolean
+! URxvt*meta8:                          boolean
+! URxvt*mouseWheelScrollPage:           boolean
+! URxvt*tripleclickwords:               boolean
+! URxvt*insecure:                       boolean
+URxvt*cursorUnderline:                on
+URxvt*cursorBlink:                    on
+! URxvt*pointerBlank:                   boolean
+! URxvt*background:                     [74]#2d2d2d
+! URxvt*foreground:                     #eeeeec
+! URxvt*colorBD:                        color
+! URxvt*colorIT:                        color
+! URxvt*colorUL:                        color
+! URxvt*colorRV:                        color
+! URxvt*underlineColor:                 color
+! URxvt*scrollColor:                    color
+! URxvt*troughColor:                    color
+! URxvt*highlightColor:                 color
+! URxvt*highlightTextColor:             color
+! URxvt*cursorColor:                    #ffffff
+! URxvt*cursorColor2:                   color
+! URxvt*pointerColor:                   color
+! URxvt*pointerColor2:                  color
+URxvt*borderColor:                   #0b0f11 
+! URxvt*iconFile:                       file
+URxvt*font:                           xft:NotoSansMono:pixelsize=16
+URxvt*boldFont:                       xft:NotoSansMono:pixelsize=16:style=bold
+URxvt*italicFont:                     xft:NotoSansMono:italic:pixelsize=16
+URxvt*boldItalicFont:                 xft:NotoSansMono:italic:pixelsize=16:style=bold
+! URxvt*intensityStyles:                boolean
+! URxvt*inputMethod:                    name
+! URxvt*preeditType:                    style
+! URxvt*imLocale:                       string
+! URxvt*imFont:                         fontname
+! URxvt*title:                          string
+! URxvt*iconName:                       string
+! URxvt*saveLines:                      number
+! URxvt*buffered:                       boolean
+URxvt*depth:                          32
+! URxvt*visual:                         number
+! URxvt*transient-for:                  windowid
+! URxvt*override-redirect:              boolean
+! URxvt*hold:                           boolean
+! URxvt*externalBorder:                 number
+! URxvt*internalBorder:                 number
+URxvt*borderLess:                     off
+! URxvt*lineSpace:                      number
+! URxvt*letterSpace:                    number
+! URxvt*skipBuiltinGlyphs:              boolean
+! URxvt*pointerBlankDelay:              number
+! URxvt*backspacekey:                   string
+! URxvt*deletekey:                      string
+! URxvt*print-pipe:                     string
+! URxvt*modifier:                       modifier
+! URxvt*cutchars:                       string
+! URxvt*answerbackString:               string
+! URxvt*secondaryScreen:                boolean
+! URxvt*secondaryScroll:                boolean
+! URxvt*perl-lib:                       string
+! URxvt*perl-eval:                      perl-eval
+! URxvt*perl-ext-common:                string
+! URxvt*perl-ext:                       string
+! URxvt*iso14755:                       boolean
+! URxvt*iso14755_52:                    boolean
+! URxvt*xrm:                            string
+! URxvt*keysym.sym:                     keysym
+URxvt*background.border:             on 
+! URxvt*background.expr:                string
+! URxvt*background.interval:            seconds
+! URxvt*bell-command:                   string
+! URxvt*kuake.hotkey:                   string
+! URxvt*matcher.button:                 string
+! URxvt*matcher.launcher:               string
+! URxvt*matcher.launcher.*:             string
+! URxvt*matcher.pattern.*:              string
+! URxvt*matcher.rend.*:                 string
+! URxvt*remote-clipboard.fetch:         string
+! URxvt*remote-clipboard.store:         string
+! URxvt*searchable-scrollback:          string
+! URxvt*selection-autotransform.*:      string
+! URxvt*selection-pastebin.cmd:         string
+! URxvt*selection-pastebin.url:         string
+! URxvt*selection.pattern-0:            string
+! URxvt*tab-bg:                         colour
+! URxvt*tab-fg:                         colour
+! URxvt*tabbar-bg:                      colour
+! URxvt*tabbar-fg:                      colour
+! URxvt*url-launcher:                   string
+
+
+!! Extensions
+URxvt.perl-ext-common:	default,matcher,resize-font,url-select,keyboard-select
+URxvt.colorUL:		#4682B4
+!! url-select
+URxvt.keysym.M-u:	perl:url-select:select_next
+URxvt.url-select.launcher: linkhandler
+URxvt.url-select.underline: true
+!! keyboard-select:
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!! resize-font
+URxvt.resize-font.smaller:	C-Down
+URxvt.resize-font.bigger:	C-Up
+!! Matcher
+URxvt.url-launcher:	linkhandler
+URxvt.matcher.button:	1
+
+
+! special
+URxvt*foreground:   #666699
+URxvt*background:   #0b0f11
+URxvt*cursorColor:  #666699
+
+! black
+URxvt*color0:       #333366
+URxvt*color8:       #333399
+
+! red
+URxvt*color1:       #6666cc
+URxvt*color9:       #9999ff
+
+! green
+URxvt*color2:       #0099cc
+URxvt*color10:      #00ccff
+
+! yellow
+URxvt*color3:       #3366cc
+URxvt*color11:      #6699ff
+
+! blue
+URxvt*color4:       #006699
+URxvt*color12:      #0099cc
+
+! magenta
+URxvt*color5:       #0066ff
+URxvt*color13:      #0099ff
+
+! cyan
+URxvt*color6:       #669999
+URxvt*color14:      #66cccc
+
+! white
+URxvt*color7:       #99cccc
+URxvt*color15:      #ccffff
+
+! special
+st*foreground:   #666699
+st*background:   #0b0f11
+st*cursorColor:  #666699
+
+! black
+st*color0:       #333366
+st*color8:       #333399
+
+! red
+st*color1:       #6666cc
+st*color9:       #9999ff
+
+! green
+st*color2:       #0099cc
+st*color10:      #00ccff
+
+! yellow
+st*color3:       #3366cc
+st*color11:      #6699ff
+
+! blue
+st*color4:       #006699
+st*color12:      #0099cc
+
+! magenta
+st*color5:       #0066ff
+st*color13:      #0099ff
+
+! cyan
+st*color6:       #669999
+st*color14:      #66cccc
+
+! white
+st*color7:       #99cccc
+st*color15:      #ccffff
+
+
+
+dwm.borderpx:		0
+dwm.normbgcolor:	#0b0f11
+dwm.normfgcolor:	#666699
+dwm.normbordercolor:	#669999
+
+dwm.selbgcolor:		#2d3133
+dwm.selfgcolor:		#ffffff
+dwm.selbordercolor:	#666699
+
+dwm.baralpha:		50
+
+dmenu.background:	#0b0f11
+dmenu.foreground:	#666699
+dmenu.selforeground:	#ffffff
+dmenu.selbackground:	#2d3133
+!dmenu.font:		"NotoSans-Regular"
+
+
+/*
+! COLORS
+! special
+st*foreground:   #c5c8c6
+st*background:   #1D1F21
+st*cursorColor:  #c5c8c6
+
+! black
+st*color0:       #1d1f21
+st*color8:       #969896
+
+! red
+st*color1:       #cc6666
+st*color9:       #cc6666
+
+! green
+st*color2:       #b5bd68
+st*color10:      #b5bd68
+
+! yellow
+st*color3:       #f0c674
+st*color11:      #f0c674
+
+! blue
+st*color4:       #81a2be
+st*color12:      #81a2be
+
+! magenta
+st*color5:       #b294bb
+st*color13:      #b294bb
+
+! cyan
+st*color6:       #8abeb7
+st*color14:      #8abeb7
+
+! white
+st*color7:       #c5c8c6
+st*color15:      #ffffff
+
+
+! special
+st*foreground:   #b7b8b9
+st*background:   #0c0d0e
+st*cursorColor:  #b7b8b9
+
+! black
+st*color0:       #0c0d0e
+st*color8:       #737475
+
+! red
+st*color1:       #e31a1c
+st*color9:       #e31a1c
+
+! green
+st*color2:       #31a354
+st*color10:      #31a354
+
+! yellow
+st*color3:       #dca060
+st*color11:      #dca060
+
+! blue
+st*color4:       #3182bd
+st*color12:      #3182bd
+
+! magenta
+st*color5:       #756bb1
+st*color13:      #756bb1
+
+! cyan
+st*color6:       #80b1d3
+st*color14:      #80b1d3
+
+! white
+st*color7:       #b7b8b9
+st*color15:      #fcfdfe
+*/
